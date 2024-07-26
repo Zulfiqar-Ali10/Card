@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile{
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.image{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile .text-data{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.text-data .job{
+    font-size: 22px;
+    font-weight: 400;
+}
+.media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media .link{
+   text-decoration: none;
+   background-color: #4070f4;
+   margin: 0 8px;
+   height: 34px;
+   width: 34px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-size: 18px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons button{
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight: 400;
+    background: #4070f4;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+}
+.buttons button:hover{
+    background-color: #0e4bf1;
+}
+.analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data:last-child{
+    border-right: none;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.profile::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+
+}
